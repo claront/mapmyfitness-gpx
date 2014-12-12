@@ -1,38 +1,14 @@
-
 <!DOCTYPE html>
-<html xmlns='http://www.w3.org/TR/html5'> 
+<html>
 <head>
-    <meta name="author" content="Mike Palumbo" />
-    <meta name="keywords" content="MapMyRide, Strava, GPX, export, conversion, converter, cycling, running" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>MapMyRide GPX Converter</title>
-</head>
-<body>
-    
-    <h2>MapMyRide GPX Converter</h2>
-    
-    <p>Simply input the ID of your workout, and we'll convert it into a GPX file that you can import into Strava, TrainingPeaks, or other services.<br/>
-    We preserve your additional metrics such as cadence and heart rate.</p>
-    
-    <br/>
-    <form action="redirect.php" method="post">
-        <label for="workoutId"><strong>MapMyRide Workout ID:</strong></label>
-        <br/>
-        <input type="text" name="workoutId" value="" maxlength="10"/>
-        <input type="submit" name="submit" value="Submit">
-    </form>
 
-    <br/>
-    <hr/>
-    <h3>How To Use:</h3>
-    <div><img src="img/step1.png" width="47" height="40" alt="Step 1">  <strong>Open MapMyRide</strong> and select your workout.</div>
-    <div><img src="img/step2.png" width="47" height="40" alt="Step 2">  <strong>Select and Copy</strong> the workout ID in the URL: <img src="img/URL.png"/></div>
-    <div><img src="img/step3.png" width="47" height="40" alt="Step 3">  <strong>Paste the ID</strong> into the textbox above, and we'll convert it for you!</div>
-    
+</head>
+
+<body ng-app>
+    <input type="text" ng-model="sometext" />
+  
+  <h1>Hello {{ sometext }}</h1>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 </body>
+
 </html>
